@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24A349631B22CE6E00BA2295 /* FactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A349621B22CE6E00BA2295 /* FactBook.m */; };
+		24A91DE11B24F561007729DB /* colorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A91DE01B24F561007729DB /* colorWheel.m */; };
 		24A925111B22443800599725 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A925101B22443800599725 /* main.m */; };
 		24A925141B22443800599725 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A925131B22443800599725 /* AppDelegate.m */; };
 		24A925171B22443800599725 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A925161B22443800599725 /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24A349611B22CE6E00BA2295 /* FactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactBook.h; sourceTree = "<group>"; };
+		24A349621B22CE6E00BA2295 /* FactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactBook.m; sourceTree = "<group>"; };
+		24A91DDF1B24F561007729DB /* colorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colorWheel.h; sourceTree = "<group>"; };
+		24A91DE01B24F561007729DB /* colorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = colorWheel.m; sourceTree = "<group>"; };
 		24A9250B1B22443800599725 /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A9250F1B22443800599725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24A925101B22443800599725 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +91,10 @@
 				24A925131B22443800599725 /* AppDelegate.m */,
 				24A925151B22443800599725 /* ViewController.h */,
 				24A925161B22443800599725 /* ViewController.m */,
+				24A349611B22CE6E00BA2295 /* FactBook.h */,
+				24A349621B22CE6E00BA2295 /* FactBook.m */,
+				24A91DDF1B24F561007729DB /* colorWheel.h */,
+				24A91DE01B24F561007729DB /* colorWheel.m */,
 				24A925181B22443800599725 /* Main.storyboard */,
 				24A9251B1B22443800599725 /* Images.xcassets */,
 				24A9251D1B22443800599725 /* LaunchScreen.xib */,
@@ -168,6 +178,7 @@
 				TargetAttributes = {
 					24A9250A1B22443800599725 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = PR477EG55J;
 					};
 					24A925231B22443800599725 = {
 						CreatedOnToolsVersion = 6.2;
@@ -221,7 +232,9 @@
 			files = (
 				24A925171B22443800599725 /* ViewController.m in Sources */,
 				24A925141B22443800599725 /* AppDelegate.m in Sources */,
+				24A349631B22CE6E00BA2295 /* FactBook.m in Sources */,
 				24A925111B22443800599725 /* main.m in Sources */,
+				24A91DE11B24F561007729DB /* colorWheel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,9 +356,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -353,9 +370,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +433,7 @@
 				24A925301B22443800599725 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24A925311B22443800599725 /* Build configuration list for PBXNativeTarget "FunFactsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +442,7 @@
 				24A925331B22443800599725 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
